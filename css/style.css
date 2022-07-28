@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+/* font-family: 'Josefin Sans', sans-serif; */
+
+*{
+     margin: 0;
+     padding: 0;
+     user-select: none;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif; 
+}
+a, a:hover{
+     text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, ul, p{
+     margin: 0;
+}
+li{
+     list-style: none;
+}
+
+#banner, .carousel-item{
+     height: 70vh;
+}
+.carousel-item img{
+     height: 100vh;
+     filter: brightness(40%);
+}
+
+#explore{
+     height: 80vh;
+}
+.explore-content{
+     background-color: rgb(224, 243, 255);
+}
+
+
+.join-div{
+     background-color: #289bde;
+}
+
+
+/* ===== CSS media query ===== */
+@media screen and (max-width: 576px) {
+     .course-banner{
+          width: 100%;
+     }
+     .course-banner img{
+          width: 100%;
+     }
+     .course-card{
+          display: flex;
+          flex-direction: column;
+     }
+     .course-details{
+          padding-top: 10px;
+          padding-bottom: 10px;
+     }
+
+
+
+     #explore{
+          height: auto;
+          padding: 10px 0;
+     }
+     .explore-container{
+          display: flex;
+          flex-direction: column;
+     }
+     .explore-banner{
+          width: 100%;
+          margin-bottom: 15px;
+     }
+     .explore-content{
+          /* padding-left: 0!important;
+          padding-right: 0!important; */
+          padding: 10px 0!important;
+     }
+
+
+     .student-col:last-child{
+          display: none;
+     }
+}
+
+@media screen and (max-width: 992px) {
+     .first-course{
+          margin-bottom: 15px;
+     }
+
+     .join-div{
+          display: flex;
+          flex-direction: column;
+     }
+     .join-content{
+          margin-bottom: 15px;
+     }
+     .join-text{
+          margin-top: 15px;
+     }
+     #companies{
+          display: none;
+     }
+
+     .course-col:nth-child(odd){
+          display: none;
+     }
+}
+
+@media screen and (min-width: 576.5px) and (max-width: 992px) {
+     .student-btn{
+          display: none;
+     }
+}
